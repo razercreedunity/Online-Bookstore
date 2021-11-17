@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Book Store</title>
+	<link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+ <div class="main">
+<ul>
+<li><a href="sample2.html">Home</a></li>
+<li><a href="removeindex.jsp">Remove Books</a></li>
+<li><a href="seachindex.jsp">View Books</a></li>
+<li><a href="updateindex.jsp">Update Books</a></li>
+<li><a href="index.html">Logout</a></li>
+</ul>
+</div>
+
+<div class="login-box">
+  <h1>Add Books</h1>
+  <form onsubmit="myFunction()" action="addbook" method="post" >
+  <div class="textbox">
+  
+     <input type="text" name="barcode" placeholder="Book Code" required>
+         </div>
+         
+    <div class="textbox">
+    <input type="text" name="name" placeholder="Book Name" required>
+  </div>   
+  
+  <div class="textbox">
+    <input type="text" name="author" placeholder="Author" required>
+  </div>  
+  
+  <div class="textbox">
+    <input type="text" name="price" placeholder="Price" required>
+  </div>  
+  
+  <div class="textbox">
+     <input type="text" name="quantity" placeholder="Quantity" required>
+  </div>    
+
+
+<input type="submit" class="btn" value="Add Books" required>
+    </form>
+    </div>
+    <script>
+function myFunction() {
+  alert("The book was successfully added");
+}
+</script>
+  </body>
+</html>
+
